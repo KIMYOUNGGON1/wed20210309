@@ -3,3 +3,4 @@ file test
 print("Hello, world");
 int a = 3;
 String b = "5번째 수정";
+"국비지원교육 첫번째 날"
