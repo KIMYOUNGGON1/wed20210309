@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--html>head>style^body-->
+<html>
+<head>
+    <style>
+        /*
+        id:100점
+        class:10점
+        elem: 1px;
+        */
+        h1 { 
+            color:red;
+        }
+
+        .note {
+            color:yellow;
+        }
+        .special {
+            color:blue;
+        }
+
+        .note.special {
+            color:pink;
+        }
+        /*class를 두개 사용 했기 떄문에 20점*/
+
+        #header1 {
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <!--h1*5>lorem3-->
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <!--elem와 class가 동시에 적용이 되면 점수가 더 높은 class가 적용됨.-->
+
+    <h1 class="note special">Tenetur, earum voluptates!</h1>
+    <!--같은 점수(class)일 경우에는 아래쪽에 있는 게 적용이 됨.-->
+
+    <h1 id="header1">Blanditiis, dolorem doloremque!</h1>
+    <h1>Omnis, nostrum similique.</h1>
+    <h1>Quae, sapiente corporis!</h1>
+    
+</body>
+</html>

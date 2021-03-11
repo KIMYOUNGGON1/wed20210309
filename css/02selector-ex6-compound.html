@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--html>head>style^body-->
+<html>
+<head>
+    <style>
+    .note {
+        color:blue;
+    }
+    h1.note {
+        text-decoration: underline;
+    }
+    /*다른 클래스 명을 입력하는 방법*/
+    /*element와 class명을 붙여서 작성해주면 됨.*/
+
+    p, .note {
+        
+    }
+    /* 23번 줄의 head 코드와 비교를 해보면
+    15번 코드의 경우 <p> elem 혹은 .note class에 적용되는 조건이고
+    23번 코드의 경우 <p> elem 이면서 .nete class를 가진 문장에 조건이 적용된다는
+    차이점이 있다.
+
+    p.note {
+        background-color:cornflowerblue;
+    }
+    /*연습으로 <p> element이면서 note class를 가진 조건을 입력할 때*/
+     
+     h1.note.error {
+         font-size: 50px;
+     }
+     /*<h1> element이면서 note와 error의 클래스를 가진 곳에만 조건을 입력할 때*/
+     
+     </style>
+</head>
+<body>
+    <!--h1*3>Lorem3^p*3>Lorem-->
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note error">Delectus, praesentium possimus.</h1>
+    <!--h1.note.error-->
+    <!--head에서 설정한 조건에 적용되는 코드를 입력하고 싶다면 이렇게.-->
+    <h1 class="note error">Lorem, ipsum dolor.</h1>
+    <h1>Distinctio, tenetur maxime.</h1>
+    <p class="note">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ullam impedit temporibus accusamus, facilis non nihil enim. Dolor odio numquam dolorem culpa, aliquid optio beatae officiis, voluptates expedita doloremque minima!</p>
+    <p>Similique totam neque doloremque obcaecati! Nesciunt voluptatibus deserunt ipsam aspernatur distinctio, tempore labore delectus dicta quos commodi sequi maxime sapiente quibusdam hic culpa consectetur dignissimos iste omnis vitae ullam aliquam?</p>
+    <p>Tempore doloribus maiores sapiente sint vitae minima iste modi. Aliquid illum laudantium, debitis placeat voluptatum officia, sequi dolorem eos cum ut incidunt expedita necessitatibus quo suscipit? Fugit, exercitationem similique? Quia.</p>
+    
+    
+    
+    <!--p.note>Lorem-->
+    <p class="note">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit libero fuga neque quos vitae nulla at dolor consectetur, voluptatum, rerum sunt eos ratione tenetur nemo. Quaerat blanditiis iure eius iusto?</p>
+    <!--div.note-->
+    <div class="note"></div>
+    <!--.note-->
+    <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, enim repellat. Magni officiis ratione, impedit vero, temporibus possimus laboriosam distinctio blanditiis quia aliquam ab officia ut debitis ex dolorem est?</div>
+    
+    <!--div를 입력하지 않아도 자동으로 div element를 통해서 만들어지는 모습을 볼 수 있음.-->
+
+    <!--p#para1>Lorem-->
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsum. Quidem, vel hic sequi enim debitis in non! Nulla porro nisi illum omnis quas totam consequatur dolores maxime vel possimus!</p>
+    <!--h1#head1.note.error-->
+    <h1 id="head1" class="note error"></h1>
+
+    <!--(#)은 id (.)은 class를 의미-->
+
+</body>
+</html>
