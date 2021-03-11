@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--손자-->
+<!--html>head>style^body-->
+<!--(^)는 형제를 의미-->
+<html>
+<head>
+    <style>
+        .note>h1 {
+            color:red;
+        }
+
+        /*자손 선택자 : 클래스가 note인 요소의 자손인 p요소*/
+        /* class 한 칸 뛰고 elem*/
+        .note p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!--.note>.error>h1>Lorem3^p>Lorem-->
+    <div class="note">
+        <div class="error">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam temporibus possimus dicta officia architecto blanditiis ut quisquam, ipsa quaerat, ratione beatae sapiente minima sit, est assumenda. Eaque et magnam maxime?</p>
+            <!--자손 선택자 : 클래스가 note인 요소의 자손인 p요소-->
+        </div>
+    </div>
+
+    <!--.note>h1>Lorem3^p>Lorem-->
+    <div class="note">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum labore nulla fuga vel excepturi? Molestiae nihil aut autem. Libero ut sed perferendis temporibus quam asperiores in culpa quae! Fugit, est!</p>
+        <!--<P>elem의 부모 <div> elem, <div>는 note class에 속함.-->
+    </div>
+
+    <!--div>h1+p-->
+    <div>
+        <h1></h1>
+        <p></p>
+    </div>
+
+    <!--h1+p-->
+    <h1></h1>
+    <p></p>
+
+</body>
+</html>

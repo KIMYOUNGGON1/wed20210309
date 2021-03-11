@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--자식-->
+<!--html>head>style^body-->
+<html>
+<head>
+    <style>
+        /*div 요소의 자식인 h1 요소*/
+        /*사이가 벌어져도 상관은 없음*/
+        /* (>)자식 selector*/
+        
+        div > h1 {
+            color:red;
+        }
+
+        /*--class가 note 요소의 자식인 p 요소-*/
+        .note > p {
+            text-decoration: underline;
+        }
+        
+
+        .error > h1 {
+            background-color: gold;
+            color :greenyellow;
+        }
+
+        /* 우선순위에 따라서 적용됨*/
+    </style>
+</head>
+<body>
+        <!--div>h1>Lorem3^p>Lorem-->
+        <div>
+            <h1>Lorem, ipsum dolor.</h1>
+            <!--<div>의 자식인 <h1>은 선택-->
+            <p class="note">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam illum deserunt earum asperiores officiis laudantium, recusandae beatae, culpa esse corporis accusantium voluptatum? Culpa nobis ipsam unde optio officiis sunt totam.</p>
+        </div>
+        <!--<div> elem은 <h1>의 부모 elem-->
+        <!--<h1> elem은 <div>의 자녀 elem-->
+
+            <!--.error>h1>Lorem3^p>Lorem-->
+            <div class="error">
+                <h1>Lorem, ipsum dolor.</h1>
+                <!--<div>의 자식인 <h1>은 선택-->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, quia obcaecati. Obcaecati accusamus accusantium, iure odio corporis recusandae ratione quaerat perspiciatis excepturi vitae deserunt voluptas amet impedit at, minima saepe?</p>
+            </div>
+
+            <div class="note">
+                <h1>Lorem, ipsum dolor.</h1>
+                <!--<div>의 자식인 <h1>은 선택-->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, quia obcaecati. Obcaecati accusamus accusantium, iure odio corporis recusandae ratione quaerat perspiciatis excepturi vitae deserunt voluptas amet impedit at, minima saepe?</p>
+            </div>
+
+
+
+            <!--h1>Lorem3-->
+            <h1>Lorem, ipsum dolor.</h1>
+
+
+        </body>
+</html>
