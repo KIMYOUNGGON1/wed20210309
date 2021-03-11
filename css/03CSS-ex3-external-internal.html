@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--html>head>link+style^body-->
+<html>
+<head>
+    <link rel="stylesheet" href="03mystyle.css">
+    <style>
+        h1 {
+            text-decoration: underline;
+            font-size: 100px;
+        }
+        /*이렇게 입력하면 외부와 내부 style sheet를 모두 사용 가능*/
+        /*맨 나중에 있는 값이 적용됨*/
+        /*link를 style sheet 보다 아래에 적었을 경우 link의 조건이 적용되는 모습 확인 가능*/
+        
+    </style>
+</head>
+<body>
+    <!--h1.error>lorem3-->
+    <h1 style="font-size: 5px;"error">Lorem, ipsum dolor.</h1>
+    <!--inline inline의 조건이 무조건 가장 우선으로 적용이 됨.-->
+</body>
+</html>
