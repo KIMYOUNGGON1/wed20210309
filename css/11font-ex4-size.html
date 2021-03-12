@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body, html {
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+        #percent {
+            font-size: 100%;
+        }/*부모 elem 기준(여기서는 body)으로 100%*/
+        .em {
+            font-size: 0.75em;
+        }/*1em은 100%와 같은 의미 0.5em이면 50% 부모 elem 기준*/
+        .rem {
+            font-size: 0.75rem;
+        }/* 루트 elem 기준으로 여기서는 html이 루트이고 body가 html루트에 속해있으니
+        body를 따라간다.*/
+    </style>
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi architecto asperiores voluptates porro magnam atque aperiam sed perspiciatis quod amet, modi molestias sint! Ipsa nihil asperiores, quia maiores obcaecati alias!</p>
+    <p id="percent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequatur omnis doloribus at? Dolore esse et, totam, eius libero ipsa veniam inventore qui ducimus omnis recusandae! Qui velit illo ut.</p>
+    <p class="em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut a voluptatibus fugiat consequatur libero quidem temporibus ipsum! Inventore similique incidunt temporibus facere quo excepturi architecto earum eveniet ipsam blanditiis. Natus!    </p>
+    <!--.em>p.em>Lorem-->
+    <div class="em">
+        <p class="em">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit necessitatibus quo quam, animi enim ratione ab dolore nemo rem optio, expedita dignissimos perferendis vero soluta. Itaque dolor rerum repellat error?</p>
+    </div>
+
+    <!--.rem>p.rem>lorem-->
+    <div class="rem">
+        <p class="rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cumque voluptatem quos esse rerum beatae temporibus nulla ducimus sapiente fugiat reprehenderit ut nesciunt iure assumenda amet, consequatur voluptas aut repudiandae.</p>
+    </div><!--em과 같지만 바깥쪽-->
+
+</body>
+
+</html>
