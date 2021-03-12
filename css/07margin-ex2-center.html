@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #div1 {
+        border:2px solid blue;
+        text-align: center;
+        
+    }
+    #div2 > div {
+        width: 200px;
+        height: 100px;
+        border: 2px dotted green;
+        margin: auto;
+    }
+    #div2 {
+        border: 2px solid blue;
+    }
+    /*block과 inline을 각각 가운데로 배치하는 것은 차이가 있음*/
+    /* test-align과 margin을 활용*/
+</style>
+<body>
+
+    <!--div#div1>span>lorem2-->
+    <div id="div1"><span>Lorem, ipsum.</span></div>
+    <!--span은 대표적인 inline elem다-->
+
+    <!--#div2>div-->
+    <div id="div2">
+        <div>Lorem</div>
+    </div>
+
+</body>
+</html>

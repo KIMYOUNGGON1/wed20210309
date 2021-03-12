@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            border: 2px solid black;
+        }
+
+        #div1 {
+            width: 300px;
+            height: 200px;
+        }
+
+        #div2 {
+            height: 200px;
+            width: 50%;
+            /*부모 요소 너비 기준*/
+        }
+
+        /*모 요소인 body의 기준에 따라서 너비가 결정됨.*/
+        #div3 {
+            border: 50px solid green;
+            width: 300px;
+            height: 200px;
+        }
+
+        /*div1과 div3을 비교할 때 다른 이유는 div3의 border값이 더 크기 때문*/
+        #div4 {
+            box-sizing: border-box;
+            border: 50px solid blue;
+            width: 300px;
+            height: 200px;
+        }/*box-sizing 을 통해서 content의 크기가 크더라도 border의 일정값에 의해서 -됨.*/
+        #div5 {
+            border-width: 0px;
+            width: 300px;
+            height: 200px;
+            background-color: yellow;
+        }
+        /*div4와 div5는 각각 content의 너비가 300x200이지만 4번은 border의 50x50사이즈가 고정값으로 존재하여 
+        상하, 좌우의 값이 border값만큼 빠지는 것을 확인할 수 있다.*/
+    </style>
+
+<body>
+    <!--(#div$+hr)*5-->
+    <div id="div1"></div>
+    <hr>
+    <div id="div2"></div>
+    <hr>
+    <div id="div3"></div>
+    <hr>
+    <div id="div4"></div>
+    <hr>
+    <div id="div5"></div>
+    <hr>
+</body>
+
+</html>
