@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+
+            h1.myheader {
+                background-color: aqua;
+            }
+
+            h1:hover {
+                background-color: burlywood;
+            }
+
+            /* pseudo class는 꼭 <a> elem만 적용가능한 것 x*/
+
+            /*여기부터 수업내용*/
+            a:link {
+                color:red;
+            }
+            a:visited {
+                color: blue;
+            }
+            a:hover {
+                color: green;
+            }
+            a:active {
+                color: black;
+            }
+            /*마찬가지로 띄어쓰기 주의(자손 selector 됨)*/            
+        </style>
+    </head>
+
+        <body>
+            <h1 class="myheader">hyperlink</h1>
+            <a href=""https://www.google.com">google</a>
+            <!--브라우저의 기본값으로 적용되는 <a>elem의 설정값을 변경해보자.-->
+            
+            <hr>
+            
+            <!--exercise 4개 풀것.-->
+            
+        </body>
+
+</html>
