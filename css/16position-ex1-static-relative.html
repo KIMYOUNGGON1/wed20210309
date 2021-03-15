@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .static-elem {
+            width: 300px;
+            height: 200px;
+            border: 5px solid green;
+            position: static;
+            /*위치 이동 property
+            left, right, top, bottom
+            */
+            left:200px;
+            top:200px;
+        }   /*지정한 곳에부터 멀어진다*/
+
+        /*static은 이동이 없다.*/
+
+        .relative-elem {
+            width: 300px;
+            height: 200px;
+            border: 5px solid green;
+            position: relative;
+            /*위치 이동 property
+            left, right, top, bottom
+            */
+            left:200px;
+            top:200px;
+        }
+        /*원래 배치되야 하는 곳에서 이동이 벌어지는 것.
+        relative*/
+    </style>
+</head>
+
+<body>
+    <div class="static-elem"></div>
+
+    <hr>
+
+    <div class="relative-elem"></div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusantium enim sequi, reprehenderit est quas tempore quaerat qui ut doloribus sit labore, cupiditate molestias aliquam natus? Dolore cum ex libero.</p>
+    <!--relative는 다른 elem의 위치에는 영향을 주지 않는다.-->
+</body>
+
+</html>
