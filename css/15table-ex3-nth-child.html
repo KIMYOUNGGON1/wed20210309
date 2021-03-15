@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p:nth-child(1) {
+            background-color: blue;
+        }
+        /*p elem의 첫째*/
+        p:nth-child(2) {
+            background-color: green;
+        }
+        p:nth-child(odd) {
+            text-decoration: underline;
+        }/*홀수*/
+        p:nth-child(even) {
+            font-weight: bold;
+        }/*짝수*/
+
+        table, th, td {
+            border: 1px solid black;
+        }
+        table {
+            width :100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            height: 30px;
+        }
+        tr:nth-child(odd) {
+            background-color: #ccc;
+        }
+        tr:nth-child(even) {
+            background-color: blue;
+        }
+
+        /*nth-child로 원하는 요소만 수정 가능*/
+    </style>
+</head>
+
+<body>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+   
+
+
+
+    <!--table>tr>th*3>lorem1^^tr*4>td*3>Lorem1-->
+    <table>
+        <tr>
+            <th>Lorem.</th>
+            <th>Voluptatem!</th>
+            <th>Facilis.</th>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Maiores.</td>
+            <td>Magnam!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Dolorum.</td>
+            <td>Quis.</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Hic!</td>
+            <td>Facere!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Minima!</td>
+            <td>Nihil.</td>
+        </tr>
+    </table>
+   
+
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        table {
+            border-collapse: collapse;
+        }/*collapse로 table안의 간격 없애기 가능*/
+        table {
+            width: 100%;
+        }/*위처럼 입력하면 부모 elem 다 차지*/
+        td {
+            text-align: center;
+            height: 50px;
+        }/*table 안의 텍스트 위치 변경*/
+        /*테이블안의 높이를 변경하고 싶다면 위와 같이*/
+    </style>
+</head>
+
+<body>
+<table>
+    <!--table>tr>th*3>lorem1^^tr*3>td*3>Lorem1-->
+    <tr>
+        <th>Lorem.</th>
+        <th>Ipsum!</th>
+        <th>Quis.</th>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Cupiditate.</td>
+        <td>Sequi?</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Consequuntur?</td>
+        <td>Eligendi.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Pariatur?</td>
+        <td>Rerum.</td>
+    </tr>
+</table>
+</body>
+
+</html>
