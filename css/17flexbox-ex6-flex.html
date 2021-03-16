@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            background-color: grey;
+            display: flex;
+            height: 300px;
+        }
+        .item:nth-child(3) {
+            font-size: 60px;
+            flex-grow: 1;
+        }
+    
+        .item:nth-child(4) {
+            width: 70px;
+            /*flex-basis: auto;*/
+            /*flex-grow: 2;*/
+            /*flex:2 auto;*/
+            flex: 2;
+        }/* auto는 basis의 기본 값이기 때문에
+        여기서는 생략을 하더라도 기본값으로 들어가게 된다.*/
+        /*/*flex:2 auto;
+        flex: 2; 는 같지 않음. 
+        flex: 2; flex-basis의 값이 0인 것과 같음
+        그렇기 때문에 width를 70px로 고정하고 flex:2 auto;
+        로 나눠준 것과 같은 출력이 될 수 없는 것임.*/
+
+        .item:nth-child(5) {
+            flex-grow: 1;
+        }
+        .item {
+            font-size: 30px;
+            color: white;
+        }
+
+        .item:nth-child(odd) {
+            background-color: blue;
+        }
+
+        .item:nth-child(even) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!--.container>.item{$}*5-->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>

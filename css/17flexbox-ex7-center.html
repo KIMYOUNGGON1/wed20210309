@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .item {
+            width: 300px;
+            height: 300px;
+            /*margin: auto;*/
+            background-color: blue;
+        }
+        /*위처럼 margin을 auto로 하거나
+        아니면 justify-content: center; / align-items: center;
+        를 flex container에 삽입하여 elem를 가운데로 배치할 수 
+        있음*/ 
+        .container {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: grey;
+            height: 600px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <!--.container>.item{1}-->
+    <div class="container">
+        <div class="item">1</div>
+    </div>
+</body>
+
+</html>
