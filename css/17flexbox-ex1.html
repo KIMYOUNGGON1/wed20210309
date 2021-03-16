@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        .child {
+            font-size: 20px;
+            color: white;
+        }
+
+        .child:nth-child(even) {
+            background-color: blue;
+        }
+        .child:nth-child(odd) {
+            background-color: red;
+        }
+        .container {
+            display: flex;
+            height: 300px;
+        }
+        /*위와 같이 display를 flex로 
+        입력하면 옆으로 배치되는 것을 확인이 가능함.
+        90도로 기울어졌다고 생각하면 됨.*/
+    </style>
+</head>
+
+<body>
+    <!--.container>.child{$}*5-->
+<div class="container">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+    <div class="child">5</div>
+</div>
+    <!--<div>elem는 block elem라서 많은 공간을 차지하며
+        줄이 바뀌어야지 다음 elem가 나오는 것을 확인 가능->
+</body>
+
+</html>
