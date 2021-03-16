@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    <label for="input1">이름</label>
+    <input name="name" id="intput1" type="text">
+    <br>
+    <label for="input2">주소</label>
+    <input name='address' id="input2" type="text">
+    <!--label은 서버 전송과 상관 x-->
+    <!--name attribute가 입력된 값이 무엇인지 알려줌.-->
+    <br>
+
+    <!--<input type="submit">-->
+    <!--select>option*3>lorem1-->
+    <select name="fav" id="">
+        <option value="lorem">Lorem.</option>
+        <option value="dist">Ipsam!</option>
+        <option value="aspe">Consequuntur!</option>
+    </select>
+    <!--내가 뭘 선택했냐에 따라서 넘어가는 정보가 달라짐
+    ex, lorem을 선택하면 fav lorem이라는 name과 value값이 넘어감-->
+
+    <br>
+
+    <textarea name="content" id="" cols="30" rows="10"></textarea>
+
+    <br>
+    <input name='nickname'type="text" value="mickey">
+    <!--value를 정해둔다면 처음 브라우저 화면에 value 값이 출력됨.-->
+    <!--여기서는 nickname이라는 name attribute와 mickey라는 
+        value 값이 서버로 날아간다.-->    
+
+    <br>
+    <input type="submit">
+    <!--회원가입을 하듯이 정보 입력 후 제출-->
+</body>
+
+</html>
