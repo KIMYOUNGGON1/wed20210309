@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h1 class="para">Lorem.</h1>
+    <h1 class="para">Incidunt!</h1>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quod esse quas voluptatem iusto
+        velit voluptatum, sed nobis, molestiae quam eius qui enim cupiditate aliquid delectus provident accusantium
+        ipsam fugiat?</p>
+    <p class="para">Ea eos amet, nesciunt veniam ad consectetur ipsum alias maiores accusantium quibusdam illum dolores,
+        minima molestiae fugiat voluptas eum corrupti! Natus, repellendus. Sit quis voluptas natus aut autem quaerat ut!
+    </p>
+
+    <script>
+        var p = document.querySelectorAll("p.para");
+        console.log(p[0].innerHTML);
+
+        var q = document.querySelectorAll(".para");
+        console.log(q[2].innerHTML);
+        // elem와 class를 함께 조합할 수 있다는 게 다른 점.
+    </script>
+
+</body>
+
+</html>
