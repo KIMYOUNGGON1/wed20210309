@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <button onclick="changeImage(this)" id="button1">cap</button>
+    <button onclick="changeImage(this)" id="button2">landscape</button>
+    <button onclick="changeImage(this)" id="button3">iu</button>
+    <button onclick="changeImage(this)" id="button4">아린</button>
+
+    <hr>
+
+    <img src="" alt="" id="img1">
+
+    <script>
+        function changeImage(elem) {
+            document.getElementById("img1").src = elem.innerHTML + ".jfif";
+        }
+    </script>
+
+</body>
+
+</html> 
