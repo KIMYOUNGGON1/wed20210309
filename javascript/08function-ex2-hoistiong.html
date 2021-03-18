@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <script>
+        myFunc();
+        function myFunc(params) {
+            console.log("abc");
+        }
+        /* 함수 정의의 순서는 중요하지 않음
+        함수 정의의 순서가 나중이어도 브라우저가 출력하면서
+        맨 위로 끌어올리기 때문임.
+        이를 hoisting이라고 함. */
+
+        fuc2();
+        //호출 방식도 동일한 것 확인가능
+        // 하지만 이 경우에는 hoisting 안됨.
+
+        //변수에 함수를 할당
+        var func2 =function(params) {
+            console.log("no name");
+        }
+        
+        
+        
+
+
+    </script>
+
+</body>
+
+</html>
