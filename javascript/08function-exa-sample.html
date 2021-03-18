@@ -12,22 +12,21 @@
     <br>
     <input type="text" id="input2">
     <br>
-    <button><i class="fas fa-plus"></i></button>
+    <button onclick="process()"><i class="fas fa-plus"></i></button>
     <br>
     <input type="text" id="result" readonly>
 
     <script>
 
-        function add(params) {
-            return a + b;
-        }
-
         function process() {
             var a = document.getElementById("input1").value;
             var b = document.getElementById("input2").value;
-
-            var c = add(a+b);
+            var c = add(a,b);
             document.getElementById("result").value = c;
+        }
+
+        function add(x, y) {
+            return Number(x) + Number(y);
         }
     </script>
 </body>
