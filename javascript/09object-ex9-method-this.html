@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+
+        var car = {
+            name : "fiat",
+            start : function () {
+                console.log(this.name + "출발합니다.");
+            }
+            //자기 자신의 property를 사용하고 싶다면 this 사용 
+        };
+
+        car.start();
+    </script>
+</body>
+
+</html>
