@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        var car = {
+            name: "fiat",
+            start: function () {
+                console.log("차가 출발합니다");
+            },
+            stop: function () {
+                console.log("차가 멈춥니다.");
+            },
+            //함수도 마찬가지로 , 를 통해서 추가 가능
+            setSpeed:function (speed) {
+                console.log("속도를" + speed + "로 바꿉니다.");
+            },
+            add: function (a, b) {
+                return a + b;
+            }
+
+        }
+        car.start();
+        car.stop();
+        car.setSpeed(100);
+        //parameter는 필요한 만큼 생성하여 사용.
+        car.add(3,5); // 8
+        var c = car.add(99,1); // 100
+        console.log(c);
+        console.log(car.add(88.11));
+        //37과 같이 변수에 값을 담아서 사용하거나
+        //38처럼 즉시 치환하여 사용 가능.
+    </script>
+</body>
+
+</html> 

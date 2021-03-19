@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        //method는 object(객체)의 function(함수)
+        function funcName(param1, param2) {
+            console.log("statment.....");
+        };
+
+        var car = {
+            name: "fiat",
+            model: 500,
+            start: function (param1, param2) {
+                console.log("statement......");
+            }
+            //method는 이미 함수의 이름을 정해놨기 때문에 
+            //이름은 생략가능하다.
+            //parameter는 원하는 만큼 입력(0개 이상)
+        };
+
+        console.log(car.name);
+        funcName();
+
+        car.start();
+        //method 출력 방법
+
+    </script>
+</body>
+
+</html>
