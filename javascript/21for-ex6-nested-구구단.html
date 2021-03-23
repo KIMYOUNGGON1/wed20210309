@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="result"></div>
+    <script>
+        var txt = "";
+        for (var a = 2; a <= 9; a++) {
+            for (var b = 1; b <= 9; b++) {
+            
+                txt += a + "x" + b + "=" + a * b + "<br>"
+                
+            }
+        }
+        document.querySelector("div").innerHTML = txt;
+    </script>
+
+
+</body>
+
+</html>
