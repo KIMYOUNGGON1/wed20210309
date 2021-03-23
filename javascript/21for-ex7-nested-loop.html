@@ -12,6 +12,12 @@
 
 <body>
     <div id="result"></div>
+    <hr>
+    <div id="result2"></div>
+    <hr>
+    <div id="result3"></div>
+    <hr>
+    <div id="result4"></div>
     <script>
         var array1 = "";
         var txt = [];
@@ -22,11 +28,45 @@
         txt[4] = "*****";
 
         for (var a = 0; a < 5; a++) {
-            array1 += txt[a]  + "<br>"            
+            array1 += txt[a] + "<br>"
         }
         document.querySelector("div").innerHTML = array1;
-        
+
+        var txt = "";
+        for (var a = 5; a >= 1; a--) {
+            for (var b = 0; b < a; b++) {
+                txt += "*";
+            }
+            txt += "<br>";
+        }
+        document.getElementById("result2").innerHTML = txt;
+
+        var txt1 = "";
+        for (var c = 5; c >= 1; c--) {
+            for (var d = 5; d > c; d--) {
+                txt1 += "&nbsp;"
+            }
+            for (var e = 0; e < c; e++) {
+                txt1 += "*";
+            }
+            txt1 += "<br>";
+        }
+        document.getElementById("result3").innerHTML = txt1;
+
+        var txt2 = "";
+        for (var f = 0; f < 5; f++) {
+            for (var g = 0; g < (4-f); g++) {
+                txt2 += "&nbsp;";
+            }
+            for (var h = 0; h <= f; h++) {
+                txt2 += "*";
+            }
+            txt2 += "<br>";
+        }
+        document.getElementById("result4").innerHTML = txt2;
+
+
     </script>
 </body>
 
-</html> 
+</html>
