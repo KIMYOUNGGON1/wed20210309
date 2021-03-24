@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div>정상출력</div>
+    <div id="result1"></div>
+    <hr>
+    <div></div>
+    <div id="result2"></div>
+    <hr>
+    <div id="result3"></div>
+    <hr>
+    <div id="result4"></div>
+
+    <script>
+        var txt = "";
+
+        var a = 0;
+       
+        while (a < 5) {
+            a++;
+            var b = 0;
+            while (b<6-1) {
+                b++;
+                txt += "*";
+            }
+        }
+        document.getElementById("result1").innerHTML = txt;
+    </script>
+</body>
+
+</html>

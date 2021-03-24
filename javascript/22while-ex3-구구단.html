@@ -8,15 +8,30 @@
 </head>
 
 <body>
+    <input type="text" placeholder="출력할 단을 입력해주세요.">
 
+    <button onclick="gugudan()">출력</button>
+
+    <div id="result"></div>
     <script>
-        
+        var multiple = 1;
         // 21for ex4 구구단 코드
         // for문을 while문으로 바꿔보기
+        function gugudan () {
+            var dan = document.querySelector("input").value;
+            dan = Number(dan);
+
+            var txt = "";
+            while (multiple <= 9) {
+                multiple++
+                txt += dan + "x" + multiple + "=" +  (dan*multiple) + "<br>";
+            }
+            document.getElementById("result").innerHTML = txt;
+        }
 
 
 
-        
+
     </script>
 
 </body>
